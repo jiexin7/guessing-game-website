@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Guess the Number 🎯</h1>
+    <p>I picked a number between 1 and 100. Can you guess it?</p>
+
+    <form id="guess-form">
+      <label for="guess-input">Your guess:</label>
+      <input
+        id="guess-input"
+        type="number"
+        min="1"
+        max="100"
+        step="1"
+        required
+      >
+      <button id="guess-button" type="submit">Guess</button>
+    </form>
+
+    <p id="message" role="status">Enter a number to start!</p>
+    <p>Attempts: <span id="attempts">0</span></p>
+
+    <button id="restart-button" type="button">Play Again</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
